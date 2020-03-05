@@ -832,3 +832,15 @@ h1, h2, h3, h4, h5, h6 {
 .blockquote img {
   width: 40px;
   border-radius: 50%; }
+
+/** Add */
+.profile li {
+  margin-bottom:0.7em;
+}
+
+.star-rating-icon{
+  font-size: 20px;
+}
+.star-rating-icon .glyphicon-star{
+  color: #ffcc33;
+}
