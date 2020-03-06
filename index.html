@@ -224,7 +224,7 @@
                       
                     </tbody>
                   </table>
-                  <p><a href="#" class="readmore">Products</a></p>
+                  <p><a href="#works-section" class="readmore">Products</a></p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
@@ -265,7 +265,7 @@
                         </td>
                       </tr>
                   </table>
-                  <p><a href="#" class="readmore">Products</a></p>
+                  <p><a href="#work2" class="readmore">Products</a></p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
@@ -371,7 +371,7 @@
                         </td>
                       </tr>
                   </table>
-                  <p><a href="#" class="readmore">Products</a></p>
+                  <p><a href="#work2" class="readmore">Products</a></p>
                 </div>
               </div>
     
@@ -561,7 +561,7 @@
             <img src="images/p1_img2.gif" alt="Image" class="freezeframe-gif img-fluid" class="img-fluid">
             <img src="images/p1_img3.jpg" alt="Image" class="img-fluid" class="img-fluid">
           </div>
-          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto" id="work1">
             <h3><span>グラフィクスを題材とした</span><span>Java演習システム<span></h3>
             <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> オブジェクト指向プログラミング, Java, グラフィックスプログラミング, SpringBoot, Webベース</p>
             <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2018.6 - now</p>
@@ -601,9 +601,9 @@
             <img src="images/p2_img5.png" alt="Image" class="img-fluid" class="img-fluid">
             <img src="images/p2_img6.jpg" alt="Image" class="img-fluid" class="img-fluid">
           </div>
-          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1" id="work2">
             <h3><span>ボードゲームのローカル実行環境</span> <span>WinG-LA</span></h3>
-            <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> ボードゲーム戦略, 継続的なプログラミング, Java, JavaFX, デスクトップアプリケーション</p>
+            <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> ボードゲーム戦略, 継続的なプログラミング, Kotlin, TornadoFX, デスクトップアプリケーション</p>
             <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2018.5 - now</p>
             <div class="works-contents mb-4">
               <p>
@@ -613,10 +613,10 @@
                 改修に至った背景として，旧アプリ(右画像2: Swing版WinG-LA)は，学習者の戦略コードをアプリに組み込むためにJavaバイトコードとして配布していたため，実行までの工程が多く，戦略コードを変更するたびにコンパイル作業を行う必要があるため，学習と全く関係ない部分で学習者に負担が生じていました．加えて，ユーザビリティに関する問題がありました．
               </p>
               <p>
-                改修するにあたって，納期まで時間がなかったこと・実装は一人で行っていたことから，フルスクラッチが難しい問題がありました．そこで，旧アプリの一部を内部で動かすことにしました．しかし，旧アプリの設計手法がかなり古く，処理とビューの結合が密であったため，そのまま流用することができませんでした．この問題は新しく実装するモジュール群と旧アプリの利用したい部分の橋渡しをするアダプタークラスを実装することで解決しました．これにより，旧アプリの変更を最小に抑えることができ，安定した短期間での実装が可能となりました．演習では利用しませんが改修後も旧アプリの起動が可能になっています．
+                改修するにあたって，納期まで時間がなかったこと・実装は一人で行っていたことから，フルスクラッチが難しい問題がありました．そこで，旧アプリの一部を内部で動かすことにしました．しかし，旧アプリの設計手法がかなり古く，処理とビューの結合が密であったため，そのまま流用することができませんでした．この問題は新しく実装するモジュール群と旧アプリの利用したい部分の橋渡しをするアダプタークラスを実装することで解決しました．これにより，旧アプリの変更を最小に抑えることができ，安定した短期間での実装が可能となりました．演習では利用しませんが改修後も旧アプリの起動が可能になっています．開発期間の問題からKotlinを新たな実装にはKotlinを利用することにしました。
               </p>
               <p>
-                改修後のWinG-LAでは，GUIライブラリとしてJavaFXを利用しました．このライブラリを採用した理由として，ユーザビリティの問題を解決できることに加えて，処理とビューを完全に分離して実装でき，保守性の向上が期待できたからです．再コンパイル問題に関しては，戦略コードの動的コンパイルモジュールの実装することで解決しました．これにより，WinG-LAを実行形式であるjarファイルで配布できるようになり，説明の簡略化など教育者側の負担も減らすことができました．
+                改修後のWinG-LAでは，GUIライブラリとしてTornadoFXを利用しました．このライブラリを採用した理由として，ユーザビリティの問題を解決できることに加えて，JavaFX系の特徴として処理とビューを完全に分離して実装でき，保守性の向上が期待できたからです．再コンパイル問題に関しては，戦略コードの動的コンパイルモジュールの実装することで解決しました．これにより，WinG-LAを実行形式であるjarファイルで配布できるようになり，説明の簡略化など教育者側の負担も減らすことができました．
               </p>
               <p>
                 この改修について2018年7月に行われたゲーム学会第16回合同研究会でポスター形式で発表しました．令和1年度の演習においても，本アプリは利用されており，学生からの評価・要望を元に，新しい対戦形式の実装を行っています．
