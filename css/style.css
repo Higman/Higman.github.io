@@ -850,12 +850,12 @@ p.keywords {
   color: #ffcc33;
 }
 
-#portfolio-section .portfolio-contents p {
+#works-section .works-contents p {
   text-indent: 1em;
   margin-bottom: 0.5em;
 }
 
-#portfolio-section h3 span {
+#works-section h3 span {
    display: inline-block;
 }
 
