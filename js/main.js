@@ -197,7 +197,22 @@ jQuery(document).ready(function($) {
 		    nav: true,
 		    navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">']
 		  });
+
 	  }
+        if ( $('.slide-one-item2').length > 0 ) {
+            $('.slide-one-item2').owlCarousel({
+            items: 1,
+            loop: true,
+                stagePadding: 0,
+            margin: 0,
+            autoplay: false,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            pauseOnHover: false,
+            nav: true,
+            navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">']
+          });
+    }       
 
 
 	  var owl = $('.centernonloop').owlCarousel({
