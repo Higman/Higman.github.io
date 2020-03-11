@@ -865,6 +865,20 @@ p.keywords {
    width: 50% !important; 
 }
 
+#skill-section .detail-table {
+   margin: auto;
+   width: 50% ; 
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 0px;  /* 5px の値を変更 */
+}
+
 .footer-list {
   display: flex;
   flex-wrap: wrap;
@@ -879,4 +893,8 @@ p.keywords {
     .site-navbar h1{
         font-size: 1rem;
     }
+}
+
+#profile-img  {
+  max-width: 70%;
 }
