@@ -629,14 +629,29 @@
         </div>
 
         <div class="row mb-5">
-<!--           <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="images/project_1.jpg" alt="Image" class="img-fluid" class="img-fluid">
-            <img src="images/project_2.jpg" alt="Image" class="img-fluid" class="img-fluid">
-          </div> -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="images/p3_img1.png" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/p3_img2.png" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/p3_img3.jpg" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
           <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-            <h3>なにか</h3>
-
-            <p class="mb-4"><a href="#" class="readmore">Visit website</a></p>
+            <h3><span>Javaにおける</span><span>可視性に基づく</span><span>参照可不可の</span><span>可視化ツール merevis</span></h3>
+          <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> Java, 可視化ツール, Kotlin, TornadoFX, 参照可能性, カプセル化</p>
+          <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2019.8 1week</p>
+          <div class="works-contents mb-4">
+            <p>
+              本ツールは、Javaのソースコード群のディレクトリ構造・各メンバの参照可能性を可視化するツールです。オブジェクト指向において、カプセル化は重要な概念の１つです。オブジェクト指向教育において、必ず取り扱われる項目であり、他の重要な概念である継承や多態性と比べると初学者にとって分かりやすいと考えています。
+            </p>
+            <p>
+              しかし、初学者のオブジェクト指向言語を用いたプログラムでは、オブジェクトやメンバの参照の制限を一切かけないこと(All public)が往々にして見られます。概念の意味や利点は座学で理解できたとしても、実際の言語仕様における制限範囲を理解していないと使いこなすことはできません。そこで、本ツールでは初学者を対象としてJava言語における各アクセス修飾子の参照可能性の理解促進を目標としています。
+            </p>
+            <p>
+              可視化手法は単純で、任意のプログラムのディレクトリ構造、クラス・メンバを図示し、各要素の参照可能性を色で表現しています。また、選択した要素から参照できない要素は半透明で表示されます。
+            </p>
+            <p>
+              実装ではKotlinとTornadoFXを利用しています。複数モジュールで構成しており、メインとなるモジュールはソースコード群の参照可能性情報を抽出するmerevis-file-info-managerモジュールです。解析にはサードライブリのJavaParseを利用しており、参照可能性情報に特化した抽象構文木を生成しています。また、参照可能性抽象構文木の生成器を実装すれば、Java以外のプログラミング言語にも対応可能なように実装しています。
+            </p>
+            <p class="mb-4"><a href="https://github.com/Higman/merevis" class="readmore">github repository</a></p>
           </div>
         </div>
 

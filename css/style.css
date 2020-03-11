@@ -874,3 +874,9 @@ p.keywords {
   display: inline-block;
   width: 20%;
 }
+
+@media screen and (max-width: 640px) {/* 640px以下*/
+    .site-navbar h1{
+        font-size: 1rem;
+    }
+}
