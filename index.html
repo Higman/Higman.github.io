@@ -371,7 +371,7 @@
                         </td>
                       </tr>
                   </table>
-                  <p><a href="#work2" class="readmore">Products</a></p>
+                  <p><a href="#work4" class="readmore">Products</a></p>
                 </div>
               </div>
     
@@ -424,7 +424,7 @@
                         </td>
                       </tr>
                   </table>
-                  <p><a href="#" class="readmore">Products</a></p>
+                  <p><a href="#works-section" class="readmore">Products</a></p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
@@ -564,7 +564,7 @@
           <div class="col-lg-5 h-100 jm-sticky-top ml-auto" id="work1">
             <h3><span>グラフィクスを題材とした</span><span>Java演習システム<span></h3>
             <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> オブジェクト指向プログラミング, Java, グラフィックスプログラミング, SpringBoot, Webベース</p>
-            <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2018.6 - now</p>
+            <p class="dev-period mb-5"><strong class="text-black">When:</strong> 2018.6 - now</p>
             <div class="works-contents mb-4">
             <p>このシステムは現在修士の研究として開発を行っているJavaを対象言語としたWebベースの演習システムです．既存の可視化ツールやサンプル問題掲載サイト等では設計技法の学習が困難であったり，規模が小さいため有用性が実感できないなど，それぞれ単体での学習効果は十分でないと考えています．Javaの言語の基本構文だけでなく，実際の使い方，つまりオブジェクト指向プログラミング(OOP)の定常的な設計技法を学ぶには，程よい大きさのプログラムを通して，有用性を実感する必要があります．</p>
             <p>
@@ -604,7 +604,7 @@
           <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1" id="work2">
             <h3><span>ボードゲームのローカル実行環境</span> <span>WinG-LA</span></h3>
             <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> ボードゲーム戦略, 継続的なプログラミング, Kotlin, TornadoFX, デスクトップアプリケーション</p>
-            <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2018.5 - now</p>
+            <p class="dev-period mb-5"><strong class="text-black">When:</strong> 2018.5 - now</p>
             <div class="works-contents mb-4">
               <p>
                 本アプリケーションは，香川大学の富永研究室の研究で利用されていたアプリケーションをコアにして，GUI周りを使いやすいようにモダンな形に改修したものです．富永研究室ではボードゲーム戦略を題材として応用的なJavaプログラミング演習を実施しています．その演習の一課題で，学習者が自前のPCのローカル環境上で作った戦略コードを実行/テストを行うために本アプリを利用します．
@@ -613,7 +613,7 @@
                 改修に至った背景として，旧アプリ(右画像2: Swing版WinG-LA)は，学習者の戦略コードをアプリに組み込むためにJavaバイトコードとして配布していたため，実行までの工程が多く，戦略コードを変更するたびにコンパイル作業を行う必要があるため，学習と全く関係ない部分で学習者に負担が生じていました．加えて，ユーザビリティに関する問題がありました．
               </p>
               <p>
-                改修するにあたって，納期まで時間がなかったこと・実装は一人で行っていたことから，フルスクラッチが難しい問題がありました．そこで，旧アプリの一部を内部で動かすことにしました．しかし，旧アプリの設計手法がかなり古く，処理とビューの結合が密であったため，そのまま流用することができませんでした．この問題は新しく実装するモジュール群と旧アプリの利用したい部分の橋渡しをするアダプタークラスを実装することで解決しました．これにより，旧アプリの変更を最小に抑えることができ，安定した短期間での実装が可能となりました．演習では利用しませんが改修後も旧アプリの起動が可能になっています．開発期間の問題からKotlinを新たな実装にはKotlinを利用することにしました。
+                改修するにあたって，納期まで時間がなかったこと・実装は一人で行っていたことから，フルスクラッチが難しい問題がありました．そこで，旧アプリの一部を内部で動かすことにしました．しかし，旧アプリの設計手法がかなり古く，処理とビューの結合が密であったため，そのまま流用することができませんでした．この問題は新しく実装するモジュール群と旧アプリの利用したい部分の橋渡しをするアダプタークラスを実装することで解決しました．これにより，旧アプリの変更を最小に抑えることができ，安定した短期間での実装が可能となりました．演習では利用しませんが改修後も旧アプリの起動が可能になっています．開発期間の問題からKotlinを新たな実装にはKotlinを利用することにしました．
               </p>
               <p>
                 改修後のWinG-LAでは，GUIライブラリとしてTornadoFXを利用しました．このライブラリを採用した理由として，ユーザビリティの問題を解決できることに加えて，JavaFX系の特徴として処理とビューを完全に分離して実装でき，保守性の向上が期待できたからです．再コンパイル問題に関しては，戦略コードの動的コンパイルモジュールの実装することで解決しました．これにより，WinG-LAを実行形式であるjarファイルで配布できるようになり，説明の簡略化など教育者側の負担も減らすことができました．
@@ -623,8 +623,6 @@
               </p>
             </div>
             <p class="mb-4"><a href="https://www.gameamusementsociety.org/article.php?story=JRC_16" class="readmore">ゲーム学会第16回合同研究会</a></p>
-            
-            
           </div>
         </div>
 
@@ -634,29 +632,50 @@
             <img src="images/p3_img2.png" alt="Image" class="img-fluid" class="img-fluid">
             <img src="images/p3_img3.jpg" alt="Image" class="img-fluid" class="img-fluid">
           </div>
-          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto" id="work3">
             <h3><span>Javaにおける</span><span>可視性に基づく</span><span>参照可不可の</span><span>可視化ツール merevis</span></h3>
-          <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> Java, 可視化ツール, Kotlin, TornadoFX, 参照可能性, カプセル化</p>
-          <p class="dev-period mb-5"><strong class="text-black">How long dev:</strong> 2019.8 1week</p>
-          <div class="works-contents mb-4">
-            <p>
-              本ツールは、Javaのソースコード群のディレクトリ構造・各メンバの参照可能性を可視化するツールです。オブジェクト指向において、カプセル化は重要な概念の１つです。オブジェクト指向教育において、必ず取り扱われる項目であり、他の重要な概念である継承や多態性と比べると初学者にとって分かりやすいと考えています。
-            </p>
-            <p>
-              しかし、初学者のオブジェクト指向言語を用いたプログラムでは、オブジェクトやメンバの参照の制限を一切かけないこと(All public)が往々にして見られます。概念の意味や利点は座学で理解できたとしても、実際の言語仕様における制限範囲を理解していないと使いこなすことはできません。そこで、本ツールでは初学者を対象としてJava言語における各アクセス修飾子の参照可能性の理解促進を目標としています。
-            </p>
-            <p>
-              可視化手法は単純で、任意のプログラムのディレクトリ構造、クラス・メンバを図示し、各要素の参照可能性を色で表現しています。また、選択した要素から参照できない要素は半透明で表示されます。
-            </p>
-            <p>
-              実装ではKotlinとTornadoFXを利用しています。複数モジュールで構成しており、メインとなるモジュールはソースコード群の参照可能性情報を抽出するmerevis-file-info-managerモジュールです。解析にはサードライブリのJavaParseを利用しており、参照可能性情報に特化した抽象構文木を生成しています。また、参照可能性抽象構文木の生成器を実装すれば、Java以外のプログラミング言語にも対応可能なように実装しています。
-            </p>
-            <p class="mb-4"><a href="https://github.com/Higman/merevis" class="readmore">github repository</a></p>
+            <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> Java, 可視化ツール, Kotlin, TornadoFX, 参照可能性, カプセル化</p>
+            <p class="dev-period mb-5"><strong class="text-black">When:</strong> 2019.8 1week</p>
+            <div class="works-contents mb-4">
+              <p>
+                本ツールは，Javaのソースコード群のディレクトリ構造・各メンバの参照可能性を可視化するツールです．オブジェクト指向において，カプセル化は重要な概念の１つです．オブジェクト指向教育において，必ず取り扱われる項目であり，他の重要な概念である継承や多態性と比べると初学者にとって分かりやすいと考えています．
+              </p>
+              <p>
+                しかし，初学者のオブジェクト指向言語を用いたプログラムでは，オブジェクトやメンバの参照の制限を一切かけないこと(All public)が往々にして見られます．概念の意味や利点は座学で理解できたとしても，実際の言語仕様における制限範囲を理解していないと使いこなすことはできません．そこで，本ツールでは初学者を対象としてJava言語における各アクセス修飾子の参照可能性の理解促進を目標としています．
+              </p>
+              <p>
+                可視化手法は単純で，任意のプログラムのディレクトリ構造，クラス・メンバを図示し，各要素の参照可能性を色で表現しています．また，選択した要素から参照できない要素は半透明で表示されます．
+              </p>
+              <p>
+              実装ではKotlinとTornadoFXを利用しています．複数モジュールで構成しており，メインとなるモジュールはソースコード群の参照可能性情報を抽出するmerevis-file-info-managerモジュールです．解析にはサードライブリのJavaParseを利用しており，参照可能性情報に特化した抽象構文木を生成しています．また，参照可能性抽象構文木の生成器を実装すれば，Java以外のプログラミング言語にも対応可能なように実装しています．
+              </p>
+              <p class="mb-1"><a href="https://github.com/Higman/merevis" class="readmore">github repository</a></p>
+              <p class="mb-4"><a href="https://www.slideshare.net/secret/DU2hYiHwxnUbzp" class="readmore">SlideShare</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="images/p4_img1.gif" alt="Image" class="freezeframe-gif img-fluid" class="img-fluid">
+            <img src="images/p4_img2.gif" alt="Image" class="freezeframe-gif img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1" id="work4">
+            <h3><span>ランダムウォーク</span> <span>可視化ツール</span></h3>
+            <p class="keywords mb-0"><strong class="text-black">Keywords:</strong> ランダムウォーク, Java, Scala, 可視化ツール</p>
+            <p class="dev-period mb-5"><strong class="text-black">When:</strong> 2017.12</p>
+            <div class="works-contents mb-4">
+              <p>
+                本ツールは，格子状のフィールド上をランダムに移動する個体の動きを観察するものです．こういった個体の動きをランダムウォークと言います．
+              </p>
+              <p>
+                このツールは講義の課題として作成したもので，JavaのSwingで実装しました．個体数や移動回数など，さまざまなパラメタ設定が可能です．後に，サークルのアドベントカレンダーの記事の題材として，Scalaで作り直しました．詳細はBlog記事を参照してください．
+              </p>
+            </div>
+            <p class="mb-1"><a href="http://hgmn-b.hatenablog.com/entry/2017/12/16/000000" class="readmore">Blog記事: ScalaFXでランダムウォーク</a></p>
+            <p class="mb-4"><a href="https://github.com/Higman/ScalaFX_RandomWalk" class="readmore">Github repository</a></p>
           </div>
         </div>
 
-          
-        </div>
 
       </div>
     </div>
