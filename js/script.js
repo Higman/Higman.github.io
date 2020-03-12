@@ -8,6 +8,21 @@ new Freezeframe('.freezeframe-gif', {
   overlay: true
 });
 
+// start rate
+$(document).ready(function() {
+  $('[class*=star-rating-icon]').each(function() {
+    if(r = $(this).prop('className').match(/(?:^| )star-rating-icon([0-5]+)(?: |$)/)) {
+      num = r[1];
+    } else {
+      num = 0;
+    }
+    for (i = 0; i < 5; i++) {
+      s = i < num ? 'icon-star' : 'icon-star-o'
+      $(this).append(`<span class="${s}"></span>`);
+    }
+  })
+});
+
 // smooth scroll
 $(document).ready(function(){
   // Add smooth scrolling to all links

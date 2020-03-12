@@ -843,11 +843,16 @@ p.keywords {
   padding-left: 4.85em;
 }
 
-.star-rating-icon{
+[class*="star-rating-icon"]{
   font-size: 20px;
 }
-.star-rating-icon .glyphicon-star{
+
+[class*="star-rating-icon"] .glyphicon-star{
   color: #ffcc33;
+}
+
+[class*="star-rating-icon"] span{
+  margin-right: 0.2em;
 }
 
 #works-section .works-contents p {
@@ -889,12 +894,17 @@ p.keywords {
   width: 20%;
 }
 
+#profile-img  {
+  max-width: 55%;
+}
 @media screen and (max-width: 640px) {/* 640px以下*/
     .site-navbar h1{
         font-size: 1rem;
     }
+
+  #skill-section .detail-table {
+    margin: auto;
+    width: 100% ; 
+  }
 }
 
-#profile-img  {
-  max-width: 55%;
-}
